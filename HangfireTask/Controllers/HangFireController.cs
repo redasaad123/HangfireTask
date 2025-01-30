@@ -46,7 +46,7 @@ namespace HangfireTask.Controllers
         [HttpGet("Recurring")]
         public IActionResult Recurring()
         {
-            RecurringJob.AddOrUpdate(() => service.DailyReport(), Cron.Minutely);
+            RecurringJob.AddOrUpdate(() => service.DailyReport(), Cron.Daily(12,0));
             return Ok();
 
         }
