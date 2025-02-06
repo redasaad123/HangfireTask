@@ -3,7 +3,7 @@ using System.Net.Mail;
 
 namespace HangfireTask.Services
 {
-    public interface IService
+    public interface IBackgroundJobService
     {
         int CountOfClicked(int number);
         void DailyReport();
@@ -12,11 +12,11 @@ namespace HangfireTask.Services
         Task CancellationToken(CancellationToken cancellationToken);
     }
 
-    public class Service : IService
+    public class BackgroundJobService : IBackgroundJobService
     {
         private readonly IConfiguration configuration;
 
-        public Service(IConfiguration configuration)
+        public BackgroundJobService(IConfiguration configuration)
         {
             this.configuration = configuration;
         }
@@ -31,10 +31,10 @@ namespace HangfireTask.Services
 
         public async Task SendEmail(string Email)
         {
-            var email = configuration.GetValue<string>("email-conf:Email");
-            var password = configuration.GetValue<string>("email-conf:password");
-            var host = "smtp.gmail.com";
-            var port = 587;
+            var email = configuration.GetValue<string>("email-confg:Email");
+            var password = configuration.GetValue<string>("email-confg:password");
+            var host = configuration.GetValue<string>("email-confg:Host");
+            var port = configuration.GetValue<int>("email-confg:Port");
 
 
             var smtpClient = new SmtpClient(host, port);
@@ -47,13 +47,6 @@ namespace HangfireTask.Services
             var message = new MailMessage(email!, Email, "mail form Task ya Ziad", "hello in abasia");
 
             await smtpClient.SendMailAsync(message);
-
-
-
-
-
-
-
 
         }
 

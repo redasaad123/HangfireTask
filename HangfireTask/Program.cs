@@ -14,7 +14,7 @@ namespace HangfireTask
             builder.Services.AddHangfire(x=>x.UseSqlServerStorage(builder.Configuration.GetConnectionString("ConnectionString")));
             builder.Services.AddHangfireServer();
 
-            builder.Services.AddTransient<IService , Service>();
+            builder.Services.AddTransient<IBackgroundJobService , BackgroundJobService>();
 
 
             builder.Services.AddControllers();

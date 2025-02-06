@@ -11,10 +11,10 @@ namespace HangfireTask.Controllers
     public class HangFireController : ControllerBase
     {
         
-        private readonly IService service;
+        private readonly IBackgroundJobService service;
         int counter = 0;
 
-        public HangFireController( IService service)
+        public HangFireController(IBackgroundJobService service)
         {
             this.service = service;
         }

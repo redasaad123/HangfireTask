@@ -94,3 +94,4 @@ C:\Users\Reda Saad\source\repos\HangfireTask\HangfireTask\bin\Debug\net8.0\runti
 C:\Users\Reda Saad\source\repos\HangfireTask\HangfireTask\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Reda Saad\source\repos\HangfireTask\HangfireTask\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\Reda Saad\source\repos\HangfireTask\HangfireTask\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Reda Saad\source\repos\HangfireTask\HangfireTask\obj\Debug\net8.0\HangfireTask.sourcelink.json

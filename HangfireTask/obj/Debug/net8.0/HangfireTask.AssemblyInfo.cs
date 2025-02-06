@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HangfireTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92668633cb9a9f9c49b750412882e86b2b0e05a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("HangfireTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HangfireTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
